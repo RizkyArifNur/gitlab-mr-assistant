@@ -44,6 +44,10 @@ gitlab-mr-assistant summarize <merge_request_iid>
 Add to `.gitlab-ci.yml`:
 
 ```yaml
+image: node:18
+stages:
+  - review
+
 review-mr:
   stage: review
   before_script:

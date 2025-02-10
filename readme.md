@@ -48,7 +48,7 @@ image: node:18
 stages:
   - review
 
-review-mr:
+summarize-mr:
   stage: review
   before_script:
     - npm install -g gitlab-mr-assistant

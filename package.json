@@ -1,0 +1,49 @@
+{
+  "name": "gitlab-mr-assistant",
+  "version": "1.0.0",
+  "description": "GitLab Merge Request Assistant with AI-powered summary",
+  "main": "dist/index.js",
+  "bin": {
+    "gitlab-mr-assistant": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && cp -r src/prompt dist/prompt",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "cli": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "gitlab",
+    "merge-request",
+    "code-review",
+    "ai",
+    "gemini",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RizkyArifNur/gitlab-mr-assistant.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/RizkyArifNur/gitlab-mr-assistant/issues"
+  },
+  "homepage": "https://gitlab.com/RizkyArifNur/gitlab-mr-assistant#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.6.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "prettier": "^3.5.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

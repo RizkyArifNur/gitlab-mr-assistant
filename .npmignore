@@ -1,0 +1,8 @@
+src/
+tests/
+.env
+.env.example
+.gitignore
+.gitlab-ci.yml
+tsconfig.json
+*.log 

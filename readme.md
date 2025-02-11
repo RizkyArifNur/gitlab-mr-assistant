@@ -26,7 +26,7 @@ npm install -g gitlab-mr-assistant
    GITLAB_TOKEN=your_gitlab_token
    GITLAB_API_URL=https://gitlab.com/api/v4
    GITLAB_PROJECT_ID=your_project_id
-   GOOGLE_API_KEY=your_google_api_key
+   GEMINI_API_KEY=your_google_api_key
    ```
 
 ## Usage
